@@ -1,1 +1,18 @@
 This program sends new RSS Feed links to a designated twitter account.
+
+RSS Feeds are read from an xml file. (yazarlar.xml is an example)
+
+On every adjustable period, it reads the feeds and looks for a link that is new(unpublished to twitter).
+When it finds a new link on a feed, it pushes the link to twitter. 
+
+Twitter accound details are found on AccountConstants.py file
+
+Links are shortened using tinyurl link shortening service
+
+Files:
+  -Main.py: sets timer, reads feeds, creates twitter messages
+  -networkManager.py: functions to shorten urls and, connect to twitter and send updates
+  -constants.py: contains some constants that the program needs
+  -yazarlar.xml: example xml file containing some rss feed links
+  -rssOrganiser.py: creates, modifies and deletes xml files for the program
+  
